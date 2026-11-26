@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Oke Ayo No.1 Special Parish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="#home"><span class="logo">C&amp;S</span><span><b>Oke Ayo No.1 Special Parish</b><small>The
+            Sacred Cherubim &amp; Seraphim Church</small></span></a>
+      <button id="theme" aria-label="Toggle light or dark">◐</button>
+      <button id="menu" aria-label="Menu">☰</button>
+      <nav id="nav">
+        <a href="#home" data-v="home">Home</a>
+        <a href="#history" data-v="history">Church History</a>
+        <a href="#hymns" data-v="hymns">Hymn Book</a>
+        <div class="has"><button class="dd" id="dd" data-g="programs">Programs ▾</button>
+          <div class="sub"><a href="#next" data-v="next">Next Program</a><a href="#weekly" data-v="weekly">Weekly
+              Program</a><a href="#monthly" data-v="monthly">Monthly Program</a><a href="#annual" data-v="annual">Annual
+              Program</a></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="view" id="v-home">
+      <div class="hero">
+        <h1>Welcome to <span>Oke Ayo</span> No.1 Special Parish</h1>
+        <p>Our history, our hymns and our programs, all in one place.</p>
+        <a class="btn" href="#hymns">Open the Hymn Book</a> <a class="btn ghost" href="#weekly">See Programs</a>
+      </div>
+      <h2>Next Program</h2>
+      <div id="home-next"></div>
+      <h2>Explore</h2>
+      <div class="grid">
+        <a class="card hy" href="#history"><span class="num">1</span><span><b>Church History</b><br><span
+              class="mut">Our story and photos</span></span></a>
+        <a class="card hy" href="#hymns"><span class="num">2</span><span><b>Hymn Book</b><br><span class="mut">Search by
+              number or title</span></span></a>
+        <a class="card hy" href="#weekly"><span class="num">3</span><span><b>Programs</b><br><span class="mut">Weekly,
+              monthly, annual</span></span></a>
+      </div>
+    </section>
+
+    <section class="view" id="v-history">
+      <h1>Church History</h1>
+      <p class="mut">Sample layout. The real history text and pictures will replace these cards.</p>
+      <div class="tl" id="tl"></div>
+    </section>
+
+    <section class="view" id="v-hymns">
+      <div id="hy-list">
+        <h1>Hymn Book</h1>
+        <input type="search" id="q" placeholder="Search by number, title or words…" aria-label="Search hymns">
+        <p class="mut" id="count"></p>
+        <div class="grid" id="hy-grid"></div>
+      </div>
+      <div id="hy-view" hidden></div>
+    </section>
+
+    <section class="view" id="v-next">
+      <h1>Next Program</h1>
+      <div id="next-big"></div>
+    </section>
+    <section class="view" id="v-weekly">
+      <h1>Weekly Program</h1>
+      <p class="mut">Sample times. Real times will be set in the admin.</p>
+      <div class="card" id="wk"></div>
+    </section>
+    <section class="view" id="v-monthly">
+      <h1>Monthly Program</h1>
+      <p class="mut">Sample entries.</p>
+      <div class="card" id="mo"></div>
+    </section>
+    <section class="view" id="v-annual">
+      <h1>Annual Program</h1>
+      <p class="mut">Sample entries.</p>
+      <div class="card" id="an"></div>
+    </section>
+  </main>
+  <footer>© Oke Ayo No.1 Special Parish</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
